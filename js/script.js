@@ -1,20 +1,20 @@
 function localizar(){
+
         navigator.geolocation.getCurrentPosition(datos,fallo);
         
         function datos(pos){
-            latitud = pos.coords.latitude;
-            longitud = pos.coords.longitude;
-            accuracy = pos.coords.accuracy;
-            altitude = pos.coords.altitude;
+            var latitud = pos.coords.latitude;
+            var longitud = pos.coords.longitude;
+            var accuracy = pos.coords.accuracy;
+            var altitude = pos.coords.altitude;
+            var position = latitud +','+ longitud;
+            GetLocalWeather(position);
         };
 
-        var position = latitud,longitud;
-        return position;
         function fallo(error){
             alert("No es posible localizar tu posición " + error);
         };
     };
-
 
     var resultContainer = $('#resultContainer');
     var output = '';
@@ -22,9 +22,11 @@ function localizar(){
     //------------ LOCAL WEATHER ----------------
 
     function GetLocalWeather(e) {
+        
+        console.log(e);
 
         var localWeatherInput = {
-            query: position,
+            query: e,
             format: 'JSON',
             num_of_days: '2',
             date: '',
@@ -40,6 +42,7 @@ function localizar(){
     }
 
     function LocalWeatherCallback(localWeather) {
+        console.log(localWeather.data);
 
         output = "<br/> Cloud Cover: " + localWeather.data.current_condition[0].cloudcover;
         output += "<br/> Humidity: " + localWeather.data.current_condition[0].humidity;
@@ -144,5 +147,3 @@ function localizar(){
     }
 
     //-------------------------------------------
-    localizar();
-    GetLocalWeather();
