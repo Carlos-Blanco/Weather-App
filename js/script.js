@@ -44,7 +44,6 @@ function GetLocalWeather(e) {
 function LocalWeatherCallback(localWeather) {
     
     var code = parseInt(localWeather.data.current_condition[0].weatherCode);
-        console.log(localWeather.data);
 
     switch(code) {
         case 113:
