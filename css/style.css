@@ -1,7 +1,9 @@
-.weather-wrapper{
-	width: 100%;
-	background: url(images/backgrounds/landscape3.jpg) center no-repeat;
-
+html { 
+  background: url(../images/backgrounds/landscape3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .weather-wrapper img {
