@@ -1,3 +1,9 @@
-img {
+.weather-wrapper{
+	width: 100%;
+	background: url(images/backgrounds/landscape3.jpg) center no-repeat;
+
+}
+
+.weather-wrapper img {
 	width: 100px;
 }
