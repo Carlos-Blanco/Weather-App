@@ -17,7 +17,9 @@ function localizar(){
 };
 
 var resultContainer = $('#resultContainer');
+var resultImgContainer = $('#resultImgContainer');
 var output = '';
+var outputImg = '';
 
 //------------ LOCAL WEATHER ----------------
 
