@@ -1,11 +1,15 @@
 html { 
-  background: url(../images/backgrounds/landscape3.jpg) no-repeat center center fixed; 
+  background: url(../images/backgrounds/landscape5.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+.weather-wrapper {
+	color: #fff;
+}
+
 .weather-wrapper img {
-	width: 100px;
+	width: 25%;
 }

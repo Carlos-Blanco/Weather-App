@@ -48,7 +48,7 @@ function LocalWeatherCallback(localWeather) {
     switch(code) {
         case 113:
             weatherIcon = "<img src='images/2.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Despejado";
             break;
         case 116:
             weatherIcon = "<img src='images/8.svg' >";
@@ -242,13 +242,14 @@ function LocalWeatherCallback(localWeather) {
             console.log("Error, no de ha obtenido el codigo");
     };
 
-    output = weatherIcon + weatherDescription;
+    output = weatherIcon;
     output += "<br/> Cloud Cover: " + localWeather.data.current_condition[0].cloudcover;
     output += "<br/> Humidity: " + localWeather.data.current_condition[0].humidity;
     output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Visibility: " + localWeather.data.current_condition[0].weatherDesc[0].value;
     output += "<br/> Observation Time: " + localWeather.data.current_condition[0].observation_time;
     output += "<br/> Pressue: " + localWeather.data.current_condition[0].pressure;
+    output += "<br/> Estado: " + weatherDescription;
 
 
     resultContainer.empty();
