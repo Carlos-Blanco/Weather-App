@@ -1,5 +1,5 @@
 html { 
-  background: url(../images/backgrounds/landscape5.jpg) no-repeat center center fixed; 
+  background: url(../images/backgrounds/landscape1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,13 +14,23 @@ body {
 .weather-info-wrapper {
 	background: rgba(0,0,0,.8);
 	color: #fff;
-	height: 20vh;
+	height: 30vh;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 }
 
 .weather-img-wrapper img {
+	float: left;
+	width: 20%;
+}
+
+.weather-info {
+	float: left;
+	width: 40%;
+}
+
+.day {
 	float: left;
 	width: 20%;
 }
