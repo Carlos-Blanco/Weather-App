@@ -242,8 +242,8 @@ function LocalWeatherCallback(localWeather) {
             console.log("Error, no de ha obtenido el codigo");
     };
 
-    output = weatherIcon;
-    output += "<br/> Cloud Cover: " + localWeather.data.current_condition[0].cloudcover;
+    outputImg = weatherIcon;
+    output = "<br/> Cloud Cover: " + localWeather.data.current_condition[0].cloudcover;
     output += "<br/> Humidity: " + localWeather.data.current_condition[0].humidity;
     output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Visibility: " + localWeather.data.current_condition[0].weatherDesc[0].value;
@@ -251,6 +251,9 @@ function LocalWeatherCallback(localWeather) {
     output += "<br/> Pressue: " + localWeather.data.current_condition[0].pressure;
     output += "<br/> Estado: " + weatherDescription;
 
+
+    resultImgContainer.empty();
+    resultImgContainer.html(outputImg);
 
     resultContainer.empty();
     resultContainer.html(output);

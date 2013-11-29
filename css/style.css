@@ -6,10 +6,21 @@ html {
   background-size: cover;
 }
 
-.weather-wrapper {
-	color: #fff;
+body {
+	margin: 0;
+	padding: 0;
 }
 
-.weather-wrapper img {
-	width: 25%;
+.weather-info-wrapper {
+	background: rgba(255,255,255,.8);
+	color: #fff;
+	height: 20vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.weather-img-wrapper img {
+	float: left;
+	width: 20%;
 }
