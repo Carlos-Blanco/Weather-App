@@ -52,71 +52,71 @@ function LocalWeatherCallback(localWeather) {
             break;
         case 116:
             weatherIcon = "<img src='images/8.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Parcialmente nublado";
             break;
         case 119:
             weatherIcon = "<img src='images/14.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Nublado";
             break;
         case 122:
             weatherIcon = "<img src='images/25.svg' >";
-            weatherDescription = "Despejado";
+            weatherDescription = "Cubierto";
             break;
         case 143:
             weatherIcon = "<img src='images/12.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Niebla";
             break;
         case 176:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Lluvias dispersas";
             break;
         case 179:
             weatherIcon = "<img src='images/21.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Nevadas dispersas";
             break;
         case 182:
             weatherIcon = "<img src='images/17.svg' >"; /* aguanieve */
-            weatherDescription = "descripcion";
+            weatherDescription = "Aguanieve dispersa";
             break;
         case 185:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Granizo disperso";
             break;
         case 200:
             weatherIcon = "<img src='images/15.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Tormentas dispersas";
             break;
         case 227:
             weatherIcon = "<img src='images/22.svg' >"; /* nieve y viento */
-            weatherDescription = "descripcion";
+            weatherDescription = "Nieve y viento";
             break;
         case 230:
             weatherIcon = "<img src='images/23.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Ventisca";
             break;
         case 248:
             weatherIcon = "<img src='images/12.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Niebla";
             break;
         case 260:
             weatherIcon = "<img src='images/12.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Niebla gélida";
             break;
         case 263:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Lloviznas debiles dispersas";
             break;
         case 266:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Lloviznas debiles";
             break;
         case 281:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Llovizna gélida";
             break;
         case 284:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "descripcion";
+            weatherDescription = "Fuertes lloviznas gélidas";
             break;
         case 293:
             weatherIcon = "<img src='images/17.svg' >";
@@ -124,7 +124,7 @@ function LocalWeatherCallback(localWeather) {
             break;
         case 296:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "Lluvia devil";
+            weatherDescription = "Lluvia debil";
             break;
         case 299:
             weatherIcon = "<img src='images/18.svg' >";
@@ -144,11 +144,11 @@ function LocalWeatherCallback(localWeather) {
             break;
         case 311:
             weatherIcon = "<img src='images/17.svg' >";
-            weatherDescription = "Lluvia helada ligera";
+            weatherDescription = "Ligera lluvia gélida";
             break;
         case 314:
             weatherIcon = "<img src='images/18.svg' >";
-            weatherDescription = "Lluvia helada moderada";
+            weatherDescription = "Lluvia gélida moderada";
             break;
         case 317:
             weatherIcon = "<img src='images/21.svg' >";
@@ -216,7 +216,7 @@ function LocalWeatherCallback(localWeather) {
             break;
         case 374:
             weatherIcon = "<img src='images/24.svg' >";
-            weatherDescription = "Granizo devil";
+            weatherDescription = "Granizo debil";
             break;
         case 377:
             weatherIcon = "<img src='images/24.svg' >";
