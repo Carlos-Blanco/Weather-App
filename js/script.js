@@ -253,7 +253,6 @@ function LocalWeatherCallback(localWeather) {
     output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Observation Time: " + localWeather.data.current_condition[0].observation_time;
     output += "<br/> Pressue: " + localWeather.data.current_condition[0].pressure;
-    output += "<br/> Estado: " + weatherDescription;
 
 
     resultImgContainer.empty();

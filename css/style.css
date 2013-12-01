@@ -30,7 +30,8 @@ body {
 }
 
 .weather-description {
-	font-size: 20px;
+	font-size: 50px;
+	margin-left: 2%;
 }
 
 .weather-info {
