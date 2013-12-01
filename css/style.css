@@ -23,7 +23,10 @@ body {
 }
 
 .weather-img-wrapper {
-	width: 15%;
+	width: 25%;
+}
+.weather-img-wrapper img{
+	width: 100%;
 }
 
 .weather-description {
