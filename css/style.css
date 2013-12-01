@@ -9,6 +9,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	color: #fff;
 }
 
 .weather-info-wrapper {
@@ -18,11 +19,15 @@ body {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+	position: flex;
 }
 
-.weather-img-wrapper img {
-	float: left;
-	width: 20%;
+.weather-img-wrapper {
+	width: 15%;
+}
+
+.weather-description {
+	font-size: 20px;
 }
 
 .weather-info {
