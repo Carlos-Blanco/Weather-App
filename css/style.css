@@ -19,7 +19,6 @@ body {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	position: flex;
 }
 
 .weather-img-wrapper {
@@ -36,7 +35,9 @@ body {
 
 .weather-info {
 	float: left;
-	width: 40%;
+	font-size: 30px;
+	margin-left: 2%;
+	width: 38%;
 }
 
 .day {

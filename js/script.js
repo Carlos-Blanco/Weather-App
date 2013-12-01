@@ -248,11 +248,10 @@ function LocalWeatherCallback(localWeather) {
 
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
-    output = "<br/> Cloud Cover: " + localWeather.data.current_condition[0].cloudcover;
-    output += "<br/> Humidity: " + localWeather.data.current_condition[0].humidity;
-    output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
-    output += "<br/> Observation Time: " + localWeather.data.current_condition[0].observation_time;
-    output += "<br/> Pressue: " + localWeather.data.current_condition[0].pressure;
+    output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
+    output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
+    // output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
+    output += "<br/> Presion: " + localWeather.data.current_condition[0].pressure + " mbar";
 
 
     resultImgContainer.empty();
