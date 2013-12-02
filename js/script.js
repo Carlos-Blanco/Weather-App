@@ -250,7 +250,7 @@ function LocalWeatherCallback(localWeather) {
     outputDesc = weatherDescription;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
     output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
-    // output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
+    output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Presion: " + localWeather.data.current_condition[0].pressure + " mbar";
 
 
