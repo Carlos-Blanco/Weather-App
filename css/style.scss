@@ -1,8 +1,47 @@
-.weather-wrapper{
-	width: 100;
-	background: url(images/backgrounds/landscape3.jpg) center no-repeat;
-	background-position: cover;
-	img {
-		width: 100px;
+html { 
+  background: url(../images/backgrounds/landscape1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.weather-info-wrapper {
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	height: 30vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	direction: row;
+}
+
+.weather-img-wrapper {
+	flex: 2;
+	img{
+		width: 100%;
 	}
+}
+
+.weather-description {
+	font-size: 50px;
+	margin-left: 2%;
+}
+
+.weather-info {
+	float: left;
+	font-size: 30px;
+	margin-left: 2%;
+	width: 38%;
+}
+
+.day {
+	flex: 1;
 }
