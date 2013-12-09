@@ -33,7 +33,7 @@ function GetLocalWeather(e) {
     var localWeatherInput = {
         query: e,
         format: 'JSON',
-        num_of_days: '2',
+        num_of_days: '4',
         date: '',
         fx: '',
         cc: '',
