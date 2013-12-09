@@ -243,12 +243,12 @@ function LocalWeatherCallback(localWeather) {
 
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
+    outputDesc += "<br/>" + localWeather.data.weather[0].tempMaxC;
+    outputDesc += "<br/>" + localWeather.data.weather[0].tempMinC;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
     output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
     output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Presion: " + localWeather.data.current_condition[0].pressure + " mbar";
-    output += "<br/> Temperatura Max: " + localWeather.data.weather[0].tempMaxC;
-    output += "<br/> Temperatura min: " + localWeather.data.weather[0].tempMinC;
 
 
     resultImgContainer.empty();
