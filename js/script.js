@@ -9,6 +9,7 @@ function localizar(){
         var altitude = pos.coords.altitude;
         var position = latitude +','+ longitude;
         GetLocalWeather(position);
+        showAltitude(altitude);
     };
 
     function fallo(error){
@@ -245,6 +246,11 @@ function LocalWeatherCallback(localWeather) {
         default:
             console.log("Error, no de ha obtenido el codigo");
     };
+
+    function showAltitude(altitude) {
+        var altitudecontainer = $("#altitude");
+        altitudecontainer.append(altitude);
+    }
 
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
