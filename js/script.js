@@ -5,11 +5,8 @@ function localizar(){
     function datos(pos){
         var latitude = pos.coords.latitude;
         var longitude = pos.coords.longitude;
-        var accuracy = pos.coords.accuracy;
-        var altitude = pos.coords.altitude;
         var position = latitude +','+ longitude;
         GetLocalWeather(position);
-        showAltitude(altitude);
     };
 
     function fallo(error){
@@ -27,9 +24,6 @@ var outputDesc = '';
 //------------ LOCAL WEATHER ----------------
 
 function GetLocalWeather(e) {
-    
-    console.log(e);
-
     var localWeatherInput = {
         query: e,
         format: 'JSON',
@@ -247,17 +241,14 @@ function LocalWeatherCallback(localWeather) {
             console.log("Error, no de ha obtenido el codigo");
     };
 
-    function showAltitude(altitude) {
-        var altitudecontainer = $("#altitude");
-        altitudecontainer.append(altitude);
-    }
-
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
     output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
     output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Presion: " + localWeather.data.current_condition[0].pressure + " mbar";
+    output += "<br/> Temperatura Max: " + localWeather.data.weather[0].tempMaxC;
+    output += "<br/> Temperatura min: " + localWeather.data.weather[0].tempMinC;
 
 
     resultImgContainer.empty();

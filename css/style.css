@@ -1,47 +1,40 @@
-html { 
-  background: url(../images/backgrounds/landscape1.jpg) no-repeat center center fixed; 
+html {
+  background: url(../images/backgrounds/landscape1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-}
+  background-size: cover; }
 
 body {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
+  margin: 0;
+  padding: 0;
+  color: #fff; }
 
 .weather-info-wrapper {
-	background: rgba(0,0,0,.8);
-	color: #fff;
-	height: 30vh;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	display: flex;
-	direction: row;
-}
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  direction: row; }
 
 .weather-img-wrapper {
-	flex: 2;
-}
-.weather-img-wrapper img{
-	width: 100%;
-}
+  flex: 2;
+  width: 30%; }
+  .weather-img-wrapper img {
+    width: 100%; }
 
 .weather-description {
-	font-size: 50px;
-	margin-left: 2%;
-}
+  font-size: 50px;
+  margin-left: 2%; }
 
 .weather-info {
-	float: left;
-	font-size: 30px;
-	margin-left: 2%;
-	width: 38%;
-}
+  float: left;
+  font-size: 30px;
+  margin-left: 2%;
+  width: 38%; }
 
 .day {
-	flex: 1;
-}
+  flex: 1; }
