@@ -243,8 +243,8 @@ function LocalWeatherCallback(localWeather) {
 
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
-    outputDesc += "<br/>" + localWeather.data.weather[0].tempMaxC;
-    outputDesc += "<br/>" + localWeather.data.weather[0].tempMinC;
+    outputmax += localWeather.data.weather[0].tempMaxC;
+    outputmin += localWeather.data.weather[0].tempMinC;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
     output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
     output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
@@ -259,5 +259,11 @@ function LocalWeatherCallback(localWeather) {
 
     resultContainer.empty();
     resultContainer.html(output);
+
+    max-temperature.empty();
+    max-temperature.html(outputmax);
+
+    min-temperature.empty();
+    min-temperature.html(outputmin);
 
 }
