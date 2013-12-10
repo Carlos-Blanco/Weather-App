@@ -36,6 +36,14 @@ body {
 	margin-left: 2%;
 }
 
+.max-temperature {
+ 	background: url(../images/max-temperature.png) no-repeat;
+}
+
+.min-temperature {
+	background: url(../images/min-temperature.png) no-repeat;
+}
+
 .weather-info {
 	float: left;
 	font-size: 30px;
