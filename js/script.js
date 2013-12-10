@@ -243,11 +243,11 @@ function LocalWeatherCallback(localWeather) {
 
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
+    outputDesc += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     outputmax += localWeather.data.weather[0].tempMaxC;
     outputmin += localWeather.data.weather[0].tempMinC;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
     output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
-    output += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
     output += "<br/> Presion: " + localWeather.data.current_condition[0].pressure + " mbar";
 
 
