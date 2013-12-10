@@ -17,6 +17,8 @@ function localizar(){
 var resultContainer = $('#resultContainer');
 var resultImgContainer = $('#resultImgContainer');
 var resultDescContainer = $('#resultDescContainer');
+var maxTemperature = $('#maxTemperature');
+var minTemperature = $('#minTemperature');
 var output = '';
 var outputImg = '';
 var outputDesc = '';
@@ -33,10 +35,9 @@ function GetLocalWeather(e) {
         date: '',
         fx: '',
         cc: '',
-        includelocation: 'true',
+        includelocation: '',
         show_comments: '',
         callback: 'LocalWeatherCallback'
-        console.log(e);
     };
 
     JSONP_LocalWeather(localWeatherInput);
@@ -247,11 +248,11 @@ function LocalWeatherCallback(localWeather) {
     outputImg = weatherIcon;
     outputDesc = weatherDescription;
     outputDesc += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
-    outputMax += localWeather.data.weather[0].tempMaxC;
-    outputMin += localWeather.data.weather[0].tempMinC;
+    outputMax = localWeather.data.weather[0].tempMaxC;
+    outputMin = localWeather.data.weather[0].tempMinC;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
     output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
-    output += "<br/> Presion: " + localWeather.data.current_condition[0].pressure + " mbar";
+    output += "<br/> Presión: " + localWeather.data.current_condition[0].pressure + " mbar";
 
 
     resultImgContainer.empty();
@@ -263,10 +264,10 @@ function LocalWeatherCallback(localWeather) {
     resultContainer.empty();
     resultContainer.html(output);
 
-    max-temperature.empty();
-    max-temperature.html(outputmax);
+    maxTemperature.empty();
+    maxTemperature.html(outputMax);
 
-    min-temperature.empty();
-    min-temperature.html(outputmin);
+    minTemperature.empty();
+    minTemperature.html(outputMin);
 
 }
