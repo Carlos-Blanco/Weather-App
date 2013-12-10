@@ -33,9 +33,10 @@ function GetLocalWeather(e) {
         date: '',
         fx: '',
         cc: '',
-        includelocation: '',
+        includelocation: 'true',
         show_comments: '',
         callback: 'LocalWeatherCallback'
+        console.log(e);
     };
 
     JSONP_LocalWeather(localWeatherInput);
