@@ -15,42 +15,10 @@ body {
   flex-direction: row; }
   .main-weather-wrapper .weather-img-wrapper {
     flex: 1; }
+    .main-weather-wrapper .weather-img-wrapper img {
+      width: 100%; }
   .main-weather-wrapper .weather-temperature-wrapper {
-    flex: 1; }
-
-.weather-info-wrapper {
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  height: 30vh;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  direction: row; }
-
-.weather-img-wrapper {
-  flex: 2;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 120px; }
-  .weather-img-wrapper img {
-    width: 50%; }
-
-.weather-description {
-  font-size: 50px;
-  text-align: center; }
-
-.max-temperature {
-  background: url(../images/max-temperature.png) no-repeat; }
-
-.min-temperature {
-  background: url(../images/min-temperature.png) no-repeat; }
-
-.weather-info {
-  float: left;
-  font-size: 30px;
-  margin-left: 2%;
-  width: 38%; }
-
-.day {
-  flex: 1; }
+    flex: 1;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 25px; }

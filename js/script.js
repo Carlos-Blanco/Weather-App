@@ -15,11 +15,12 @@ function localizar(){
 };
 
 var resultWeatherIcon = $('#weather-icon');
-// var currentTemperature = $('#current-temperature');
+var currentTemperature = $('#current-temperature');
 // var maxTemperature = $('#maxTemperature');
 // var minTemperature = $('#minTemperature');
 // var output = '';
 var outputImg = '';
+var outputTemp = '';
 // var outputDesc = '';
 // var outputMax = '';
 // var outputMin = '';
@@ -245,6 +246,7 @@ function LocalWeatherCallback(localWeather) {
     };
 
     outputImg = weatherIcon;
+    outputTemp = localWeather.data.current_condition[0].temp_C + 'º';
     // outputImg += localWeather.data.current_condition[0].temp_C + 'º';
     // outputDesc += "<br/>" + weatherDescription;
     // outputMax = localWeather.data.weather[0].tempMaxC;
@@ -257,16 +259,7 @@ function LocalWeatherCallback(localWeather) {
     resultWeatherIcon.empty();
     resultWeatherIcon.html(outputImg);
 
-    // resultDescContainer.empty();
-    // resultDescContainer.html(outputDesc);
-
-    // resultContainer.empty();
-    // resultContainer.html(output);
-
-    // maxTemperature.empty();
-    // maxTemperature.html(outputMax);
-
-    // minTemperature.empty();
-    // minTemperature.html(outputMin);
+    currentTemperature.empty();
+    currentTemperature.html(outputTemp)
 
 }
