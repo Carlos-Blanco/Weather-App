@@ -246,8 +246,8 @@ function LocalWeatherCallback(localWeather) {
     };
 
     outputImg = weatherIcon;
-    outputDesc = weatherDescription;
-    outputDesc += "<br/> Temp C: " + localWeather.data.current_condition[0].temp_C;
+    outputImg += localWeather.data.current_condition[0].temp_C + 'º';
+    outputDesc += "<br/>" + weatherDescription;
     outputMax = localWeather.data.weather[0].tempMaxC;
     outputMin = localWeather.data.weather[0].tempMinC;
     output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
