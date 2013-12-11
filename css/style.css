@@ -10,6 +10,14 @@ body {
   padding: 0;
   color: #fff; }
 
+.main-weather-wrapper {
+  display: flex;
+  flex-direction: row; }
+  .main-weather-wrapper .weather-img-wrapper {
+    flex: 1; }
+  .main-weather-wrapper .weather-temperature-wrapper {
+    flex: 1; }
+
 .weather-info-wrapper {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;

@@ -14,16 +14,15 @@ function localizar(){
     };
 };
 
-var resultContainer = $('#resultContainer');
-var resultImgContainer = $('#resultImgContainer');
-var resultDescContainer = $('#resultDescContainer');
-var maxTemperature = $('#maxTemperature');
-var minTemperature = $('#minTemperature');
-var output = '';
+var resultWeatherIcon = $('#weather-icon');
+// var currentTemperature = $('#current-temperature');
+// var maxTemperature = $('#maxTemperature');
+// var minTemperature = $('#minTemperature');
+// var output = '';
 var outputImg = '';
-var outputDesc = '';
-var outputMax = '';
-var outputMin = '';
+// var outputDesc = '';
+// var outputMax = '';
+// var outputMin = '';
 
 //------------ LOCAL WEATHER ----------------
 
@@ -246,28 +245,28 @@ function LocalWeatherCallback(localWeather) {
     };
 
     outputImg = weatherIcon;
-    outputImg += localWeather.data.current_condition[0].temp_C + 'º';
-    outputDesc += "<br/>" + weatherDescription;
-    outputMax = localWeather.data.weather[0].tempMaxC;
-    outputMin = localWeather.data.weather[0].tempMinC;
-    output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
-    output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
-    output += "<br/> Presión: " + localWeather.data.current_condition[0].pressure + " mbar";
+    // outputImg += localWeather.data.current_condition[0].temp_C + 'º';
+    // outputDesc += "<br/>" + weatherDescription;
+    // outputMax = localWeather.data.weather[0].tempMaxC;
+    // outputMin = localWeather.data.weather[0].tempMinC;
+    // output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
+    // output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
+    // output += "<br/> Presión: " + localWeather.data.current_condition[0].pressure + " mbar";
 
 
-    resultImgContainer.empty();
-    resultImgContainer.html(outputImg);
+    resultWeatherIcon.empty();
+    resultWeatherIcon.html(outputImg);
 
-    resultDescContainer.empty();
-    resultDescContainer.html(outputDesc);
+    // resultDescContainer.empty();
+    // resultDescContainer.html(outputDesc);
 
-    resultContainer.empty();
-    resultContainer.html(output);
+    // resultContainer.empty();
+    // resultContainer.html(output);
 
-    maxTemperature.empty();
-    maxTemperature.html(outputMax);
+    // maxTemperature.empty();
+    // maxTemperature.html(outputMax);
 
-    minTemperature.empty();
-    minTemperature.html(outputMin);
+    // minTemperature.empty();
+    // minTemperature.html(outputMin);
 
 }
