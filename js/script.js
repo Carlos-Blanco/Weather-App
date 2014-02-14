@@ -15,6 +15,7 @@ function localizar(){
 };
 
 var resultWeatherIcon = $('#weather-icon');
+var resultWeatherDesc = $('#weather-description');
 var currentTemperature = $('#current-temperature');
 // var maxTemperature = $('#maxTemperature');
 // var minTemperature = $('#minTemperature');
@@ -247,8 +248,9 @@ function LocalWeatherCallback(localWeather) {
 
     outputImg = weatherIcon;
     outputTemp = localWeather.data.current_condition[0].temp_C + 'º';
+    outputDesc = weatherDescription;
+    console.log(outputDesc);
     // outputImg += localWeather.data.current_condition[0].temp_C + 'º';
-    // outputDesc += "<br/>" + weatherDescription;
     // outputMax = localWeather.data.weather[0].tempMaxC;
     // outputMin = localWeather.data.weather[0].tempMinC;
     // output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
@@ -258,6 +260,9 @@ function LocalWeatherCallback(localWeather) {
 
     resultWeatherIcon.empty();
     resultWeatherIcon.html(outputImg);
+
+    resultWeatherDesc.empty();
+    resultWeatherDesc.html(outputDesc);
 
     currentTemperature.empty();
     currentTemperature.html(outputTemp)

@@ -1,24 +1,28 @@
 html {
-  background: url(../images/backgrounds/landscape1.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-color: #303843;
+}
 
 body {
   margin: 0;
   padding: 0;
-  color: #fff; }
+  color: #fff;
+}
 
 .main-weather-wrapper {
   display: flex;
-  flex-direction: row; }
-  .main-weather-wrapper .weather-img-wrapper {
-    flex: 1; }
-    .main-weather-wrapper .weather-img-wrapper img {
-      width: 100%; }
-  .main-weather-wrapper .weather-temperature-wrapper {
-    flex: 1;
-    font-size: 120px;
-    text-align: center;
-    margin-top: 10%; }
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+.main-weather-wrapper .weather-img-wrapper {
+  -webkit-flex: 1;
+}
+.main-weather-wrapper .weather-img-wrapper img {
+  width: 100%;
+}
+.main-weather-wrapper .weather-temperature-wrapper {
+  -webkit-flex: 1;
+  font-size: 120px;
+  text-align: center;
+  margin-top: 10%;
+}
