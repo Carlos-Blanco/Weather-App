@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans-Bold-webfont.eot');
+  src: url('fonts/OpenSans-Bold-webfont.eot') format('embedded-opentype'), url('fonts/OpenSans-Bold-webfont.woff') format('woff'), url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Bold-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html { 
   background-color: #303843;
 }
@@ -16,7 +24,7 @@ body {
 	.weather-img-wrapper {
 		-webkit-flex: 1;
 		img {
-			width: 100%;
+			width: 50%;
 		}
 	}
 	.weather-temperature-wrapper {
@@ -27,58 +35,7 @@ body {
 	}
 }
 
-
-
-
-
-
-
-
-
-
-// .weather-info-wrapper {
-// 	background: rgba(0,0,0,.8);
-// 	color: #fff;
-// 	height: 30vh;
-// 	width: 100%;
-// 	position: absolute;
-// 	bottom: 0;
-// 	display: flex;
-// 	direction: row;
-// }
-
-// .weather-img-wrapper {
-// 	flex: 2;
-// 	margin: 0 auto;
-// 	width: 100%;
-// 	font-size: 120px;
-// 	img{
-// 		width: 50%;
-// 	}
-// }
-
-// .weather-description {
-// 	font-size: 50px;
-// 	text-align: center;
-// }
-
-// .max-temperature {
-//  	background: url(../images/max-temperature.png) no-repeat;
-// }
-
-// .min-temperature {
-// 	background: url(../images/min-temperature.png) no-repeat;
-// }
-
-// .weather-info {
-// 	float: left;
-// 	font-size: 30px;
-// 	margin-left: 2%;
-// 	width: 38%;
-// }
-
-// .day {
-// 	flex: 1;
-// }
-
-
+.weather-wrapper {
+	font-size: 5em;
+	text-align: center;
+}
