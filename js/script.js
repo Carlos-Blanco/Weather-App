@@ -17,14 +17,8 @@ function localizar(){
 var resultWeatherIcon = $('#weather-icon');
 var resultWeatherDesc = $('#weather-description');
 var currentTemperature = $('#current-temperature');
-// var maxTemperature = $('#maxTemperature');
-// var minTemperature = $('#minTemperature');
-// var output = '';
 var outputImg = '';
 var outputTemp = '';
-// var outputDesc = '';
-// var outputMax = '';
-// var outputMin = '';
 
 //------------ LOCAL WEATHER ----------------
 
@@ -250,12 +244,6 @@ function LocalWeatherCallback(localWeather) {
     outputTemp = localWeather.data.current_condition[0].temp_C + 'º';
     outputDesc = weatherDescription;
     console.log(outputDesc);
-    // outputImg += localWeather.data.current_condition[0].temp_C + 'º';
-    // outputMax = localWeather.data.weather[0].tempMaxC;
-    // outputMin = localWeather.data.weather[0].tempMinC;
-    // output = "<br/> Nubosidad: " + localWeather.data.current_condition[0].cloudcover + " %";
-    // output += "<br/> Humedad: " + localWeather.data.current_condition[0].humidity + " %";
-    // output += "<br/> Presión: " + localWeather.data.current_condition[0].pressure + " mbar";
 
 
     resultWeatherIcon.empty();
