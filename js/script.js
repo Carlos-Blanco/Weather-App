@@ -1,3 +1,7 @@
+$('#settings').on('click', function(){
+    localStorage.farenheit = true;
+});
+
 function localizar(){
 
     navigator.geolocation.getCurrentPosition(datos,fallo);
@@ -19,6 +23,7 @@ var resultWeatherDesc = $('#weather-description');
 var currentTemperature = $('#current-temperature');
 var outputImg = '';
 var outputTemp = '';
+localStorage.farenheit = false;
 
 //------------ LOCAL WEATHER ----------------
 
@@ -37,6 +42,8 @@ function GetLocalWeather(e) {
 
     JSONP_LocalWeather(localWeatherInput);
     e.preventDefault();
+    console.log(localWeather.data.current_condition[0].temp_C);
+    console.log('Patata');
 }
 
 function LocalWeatherCallback(localWeather) {
@@ -241,10 +248,14 @@ function LocalWeatherCallback(localWeather) {
     };
 
     outputImg = weatherIcon;
-    outputTemp = localWeather.data.current_condition[0].temp_C + 'º';
-    outputDesc = weatherDescription;
-    console.log(outputDesc);
 
+    if (localStorage.farenheit === true) {
+        outputTemp = localWeather.data.current_condition[0].temp_F + 'º';
+    } else {
+        outputTemp = localWeather.data.current_condition[0].temp_C + 'º';
+    };
+
+    outputDesc = weatherDescription;
 
     resultWeatherIcon.empty();
     resultWeatherIcon.html(outputImg);
@@ -254,5 +265,4 @@ function LocalWeatherCallback(localWeather) {
 
     currentTemperature.empty();
     currentTemperature.html(outputTemp)
-
 }
