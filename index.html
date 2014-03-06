@@ -23,7 +23,8 @@
     <script>
     $(document).ready(function(){
         localizar();
-        $('#settings').on('click', function(){
+        $('#settings').click(function(){
+            alert('hola');
             localStorage.farenheit = true;
         });
     });

@@ -1,7 +1,3 @@
-$('#settings').on('click', function(){
-    localStorage.farenheit = true;
-});
-
 function localizar(){
 
     navigator.geolocation.getCurrentPosition(datos,fallo);
@@ -23,7 +19,6 @@ var resultWeatherDesc = $('#weather-description');
 var currentTemperature = $('#current-temperature');
 var outputImg = '';
 var outputTemp = '';
-localStorage.farenheit = false;
 
 //------------ LOCAL WEATHER ----------------
 
@@ -249,10 +244,10 @@ function LocalWeatherCallback(localWeather) {
 
     outputImg = weatherIcon;
 
-    if (localStorage.farenheit === true) {
-        outputTemp = localWeather.data.current_condition[0].temp_F + 'º';
-    } else {
+    if (localStorage.farenheit !== true) {
         outputTemp = localWeather.data.current_condition[0].temp_C + 'º';
+    } else {
+        outputTemp = localWeather.data.current_condition[0].temp_F + 'º'; 
     };
 
     outputDesc = weatherDescription;
